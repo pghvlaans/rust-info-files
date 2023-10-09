@@ -27,5 +27,7 @@ Internet access is required, but everything can be done as a non-root user. The 
 
 The source archive will be downloaded and extracted, and all crate names and versions will be found in `Cargo.lock`. The crates will then be downloaded and checked for `sha256` sums. If all is well, the end result is an `info` file, complete with all sources and `md5` sums.
 
+Other aspects of the update process can be automated as well. See the directories in `examples` for the scripts and files I use to generate my own SlackBuilds for `rust` software on [SlackBuilds Online](https://slackbuilds.org).
+
 Although I have never encountered errors with this iteration of the scripts, please feel free to make an issue or contact me directly if problems do occur.
 
