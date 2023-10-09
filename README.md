@@ -1,6 +1,6 @@
 **rust-info-files**
 
-For Slackware script build script maintainers. Generate `*.info` files for `rust` software automatically using the scripts in this repository.
+For Slackware buildscript maintainers. Generate `*.info` files for `rust` software automatically using the scripts in this repository.
 
 When putting together a SlackBuild for `rust` software, writing the `info` file is by far the most daunting task. Most projects require hundreds of crates, all of which must be found in `Cargo.lock`, downloaded, verified for `sha256` sums and finally written to the file, complete with `md5` sums, all in the proper order. Without automation, a simple script update could easily turn into an all-day project.
 
