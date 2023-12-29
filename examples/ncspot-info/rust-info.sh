@@ -29,7 +29,7 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-ncspot}
-VERSION=${VERSION:-0.13.4}
+VERSION=${VERSION:-1.0.0}
 HOMEPAGE=${HOMEPAGE:-https://github.com/hrkfdn/ncspot}
 REQUIRES=${REQUIRES:-rust16}
 MAINTAINER=${MAINTAINER:-"K. Eugene Carlson"}
@@ -162,5 +162,5 @@ cd $PRGDIR
 cargo run --package xtask -- generate-manpage
 cargo run --package xtask -- generate-shell-completion --shells=bash,zsh,fish,powershell,elvish
 cd misc
-tar cavf ncspot-misc.tar _ncspot _ncspot.ps1 ncspot.1 ncspot.bash ncspot.fish ncspot.elv
-mv ncspot-misc.tar $HOME/Builds/RUST-INFO-DIRS/ncspot-info/EXPORT
+tar cavf ncspot-misc-$VERSION.tar _ncspot _ncspot.ps1 ncspot.1 ncspot.bash ncspot.fish ncspot.elv
+mv ncspot-misc-$VERSION.tar $HOME/Builds/RUST-INFO-DIRS/ncspot-info/EXPORT
