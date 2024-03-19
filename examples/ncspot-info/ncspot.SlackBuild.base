@@ -2,7 +2,7 @@
 
 # Slackware build script for ncspot
 
-# Copyright 2021-2023 K. Eugene Carlson  Tsukuba, Japan
+# Copyright 2021-2024 K. Eugene Carlson  Tsukuba, Japan
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -77,7 +77,7 @@ fi
 unset DRAWCOVER
 
 # Use COVERS=yes to compile ncspot with cover-drawing capabilities. Requires
-# ueberzug.
+# ueberzug or ueberzugpp.
 [ ${COVERS:-no} = yes ] && DRAWCOVER="--features cover"
 
 set -e

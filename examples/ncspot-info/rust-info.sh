@@ -3,7 +3,7 @@
 # Automatic $PRGNAM.info generator for Rust software. Use this script for
 # software that supports both x86-64 and x86 architecture.
 
-# Copyright 2022-2023 K. Eugene Carlson  Tsukuba, Japan 
+# Copyright 2022-2024 K. Eugene Carlson  Tsukuba, Japan 
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,7 +29,7 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-ncspot}
-VERSION=${VERSION:-1.0.0}
+VERSION=${VERSION:-1.1.0}
 HOMEPAGE=${HOMEPAGE:-https://github.com/hrkfdn/ncspot}
 REQUIRES=${REQUIRES:-rust16}
 MAINTAINER=${MAINTAINER:-"K. Eugene Carlson"}

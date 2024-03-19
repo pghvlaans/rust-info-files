@@ -2,7 +2,7 @@
 
 # Slackware build script for onefetch
 
-# Copyright 2023 K. Eugene Carlson  Tsukuba, Japan
+# Copyright 2023-2024 K. Eugene Carlson  Tsukuba, Japan
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -84,7 +84,7 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 mkdir misc
 cd misc
-tar xvf $CWD/$PRGNAM-misc.tar
+tar xvf $CWD/$PRGNAM-misc-$VERSION.tar
 cd ..
 
 # build offline

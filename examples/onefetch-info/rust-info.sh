@@ -3,7 +3,7 @@
 # Automatic $PRGNAM.info generator for Rust software. Use this script for
 # software that supports both x86-64 and x86 architecture.
 
-# Copyright 2022-2023 K. Eugene Carlson  Tsukuba, Japan 
+# Copyright 2022-2024 K. Eugene Carlson  Tsukuba, Japan 
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,7 +29,7 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-onefetch}
-VERSION=${VERSION:-2.18.1}
+VERSION=${VERSION:-2.20.0}
 HOMEPAGE=${HOMEPAGE:-https://github.com/o2sh/onefetch}
 REQUIRES=${REQUIRES:-rust16}
 MAINTAINER=${MAINTAINER:-K. Eugene Carlson}
@@ -159,8 +159,8 @@ $NEWBIN --generate zsh > _onefetch
 $NEWBIN --generate fish > onefetch.fish
 $NEWBIN --generate powershell > _onefetch.ps1
 $NEWBIN --generate elvish > onefetch.elv
-tar cavf onefetch-misc.tar *
-mv onefetch-misc.tar ../EXPORT
+tar cavf onefetch-misc-$VERSION.tar *
+mv onefetch-misc-$VERSION.tar ../EXPORT
 cd ..
 
 # Cleaning up; see the DEBUG directory for intermediate documents.
