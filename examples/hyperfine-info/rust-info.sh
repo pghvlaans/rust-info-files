@@ -31,7 +31,7 @@
 PRGNAM=${PRGNAM:-hyperfine}
 VERSION=${VERSION:-1.18.0}
 HOMEPAGE=${HOMEPAGE:-https://github.com/sharkdp/hyperfine}
-REQUIRES=${REQUIRES:-rust16}
+REQUIRES=${REQUIRES:-rust-opt}
 MAINTAINER=${MAINTAINER:-K. Eugene Carlson}
 EMAIL=${EMAIL:-kvngncrlsn@gmail.com}
 

@@ -3,7 +3,7 @@
 # Automatic $PRGNAM.info generator for Rust software. Use this script for
 # software that supports both x86-64 and x86 architecture.
 
-# Copyright 2022-2024 K. Eugene Carlson  Tsukuba, Japan 
+# Copyright 2022-2023 K. Eugene Carlson  Tsukuba, Japan
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,9 +29,9 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-onefetch}
-VERSION=${VERSION:-2.20.0}
+VERSION=${VERSION:-2.21.0}
 HOMEPAGE=${HOMEPAGE:-https://github.com/o2sh/onefetch}
-REQUIRES=${REQUIRES:-rust16}
+REQUIRES=${REQUIRES:-rust-opt}
 MAINTAINER=${MAINTAINER:-K. Eugene Carlson}
 EMAIL=${EMAIL:-kvngncrlsn@gmail.com}
 
@@ -145,8 +145,8 @@ sed -e "s/%%VERSION%%/$VERSION/g" $PRGNAM.SlackBuild.base > $PRGNAM.SlackBuild
 
 # EXTRA: Need to generate completions with the new version of the program or whatever.
 cd $PRGDIR
-export PATH=$HOME/.cargo/bin:/opt/rust16/bin:$PATH
-export LD_LIBRARY_PATH=/opt/rust16/lib64
+export PATH=$HOME/.cargo/bin:/opt/rust/bin:$PATH
+export LD_LIBRARY_PATH=/opt/rust/lib64
 cargo build --release
 cd ..
 

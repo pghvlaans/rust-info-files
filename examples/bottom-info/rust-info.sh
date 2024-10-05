@@ -29,9 +29,9 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-bottom}
-VERSION=${VERSION:-0.9.6}
+VERSION=${VERSION:-0.10.2}
 HOMEPAGE=${HOMEPAGE:-https://github.com/ClementTsang/bottom}
-REQUIRES=${REQUIRES:-rust16}
+REQUIRES=${REQUIRES:-rust-opt}
 MAINTAINER=${MAINTAINER:-K. Eugene Carlson}
 EMAIL=${EMAIL:-kvngncrlsn@gmail.com}
 

@@ -29,9 +29,9 @@
 
 # Information about the program goes here
 PRGNAM=${PRGNAM:-ncspot}
-VERSION=${VERSION:-1.1.0}
+VERSION=${VERSION:-1.1.2}
 HOMEPAGE=${HOMEPAGE:-https://github.com/hrkfdn/ncspot}
-REQUIRES=${REQUIRES:-rust16}
+REQUIRES=${REQUIRES:-rust-opt}
 MAINTAINER=${MAINTAINER:-"K. Eugene Carlson"}
 EMAIL=${EMAIL:-kvngncrlsn@gmail.com}
 
@@ -154,8 +154,8 @@ mkdir EXPORT
 mv ncspot.SlackBuild ncspot.info EXPORT
 
 # Generate the manpage and shell completions
-export PATH=$HOME/.cargo/bin:/opt/rust16/bin:$PATH
-export LD_LIBRARY_PATH=/opt/rust16/lib64
+export PATH=$HOME/.cargo/bin:/opt/rust/bin:$PATH
+export LD_LIBRARY_PATH=/opt/rust/lib64
 
 [ ! -x $HOME/.cargo/bin/cargo-xtask ] && cargo install cargo-xtask
 cd $PRGDIR
